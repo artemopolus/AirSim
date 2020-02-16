@@ -2,9 +2,6 @@
   "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
   "SettingsVersion": 1.2,
   "SimMode": "Multirotor",
-  "PawnPaths": {
-    "DefaultQuadrotor": {"PawnBP": "Class'/AirSim/Blueprints/BP_FlyingPawn.BP_FlyingPawn_C'"},
-  },
   "Vehicles": {
         "PX4": {
             "VehicleType": "PX4Multirotor",
