@@ -13,5 +13,28 @@ void sendHILSensor(const Vector3r& acceleration, const Vector3r& gyro, const Vec
 
 4) Путь к базовому классу транспорта \AirSim\Unreal\Environments\Blocks\Plugins\AirSim\Source\AirLib\include\api\VehicleApiBase.hpp
 
-5) //Physics engine calls this method to set next kinematics
+5) 
+
+
+//Physics engine calls this method to set next kinematics
+
+class MultiRotor : public PhysicsBody {
+...
+
     virtual void updateKinematics(const Kinematics::State& kinematics) override
+    {
+    ...
+    		vehicle_api_->getActuation(rotor_index));
+    ...
+}}
+
+in file \AirSim\Unreal\Environments\Blocks\Plugins\AirSim\Source\AirLib\include\physics\FastPhysicsEngine.hpp
+     void updatePhysics(PhysicsBody& body)
+     {
+     ...
+
+     	body.setWrench(next_wrench);
+        body.updateKinematics(next);
+
+     ...
+     }
