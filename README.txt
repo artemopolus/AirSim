@@ -40,3 +40,9 @@ in file \AirSim\Unreal\Environments\Blocks\Plugins\AirSim\Source\AirLib\include\
      }
 
 MultiRotor.hpp -> MultiRotorPawnSimApi.h -> SimModeWorldMultiRotor.h ( ASimModeWorldMultiRotor : public ASimModeWorldBase : public ASimModeBase) -> WorldSimApi.h
+
+AirSim\AirLib -- это основные моменты физики и управления
+
+AirSim\Unreal\Plugins\AirSim\Source -- это имплементация объекта в анриал
+
+AirSim\Unreal\Environments\Blocks -- экспериментальная площадка для симуляции по умолчанию. Ее обновляет команда update_from_git.bat. Сборка проекта идет через .sln
