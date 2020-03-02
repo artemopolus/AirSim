@@ -1,7 +1,7 @@
 {
   "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
   "SettingsVersion": 1.2,
-  "SimMode": "Multirotor",
+  "SimMode": "Plane",
     "OriginGeopoint": {
     "Latitude": 47.641468,
     "Longitude": -122.140165,
@@ -9,7 +9,7 @@
   },
   "Vehicles": {
         "PX4": {
-            "VehicleType": "PX4Multirotor",
+            "VehicleType": "px4plane",
             "EnableCollisions": true,
             "AllowAPIAlways": true,
             "UseSerial": false,
