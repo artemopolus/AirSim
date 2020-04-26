@@ -1,15 +1,19 @@
 {
   "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
   "SettingsVersion": 1.2,
+  "ViewMode": "FlyWithMe",
   "SimMode": "Plane",
     "OriginGeopoint": {
-    "Latitude": 47.641468,
-    "Longitude": -122.140165,
-    "Altitude": 122
+    "Latitude": 59.970326, 
+    "Longitude": 30.315967,
+    "Altitude": 10
   },
   "Vehicles": {
         "PX4": {
+            "Yaw": 180,
             "VehicleType": "px4plane",
+            "QgcHostIp": "127.0.0.1",
+            "QgcPort": 14550,
             "EnableCollisions": true,
             "AllowAPIAlways": true,
             "UseSerial": true,
@@ -24,6 +28,30 @@
                 "LPE_LAT": 47.641468,
                 "LPE_LON": -122.140165,
                 "COM_OBL_ACT": 1
+            },
+            "Rotors":{
+                "One":{
+                    "max_rpm": 6396.667,
+                    "propeller_diameter": 0.2286,
+                    "air_density": 1.225,
+                    "C_T":  0.109919,
+                    "C_P":  0.040164
+                }
+            },
+            "Rudders":{
+                "One":{
+                    "max_angle_1": 1.45,
+                    "max_thrust_angle_1": 0.095,
+                    "C_res": 0.045
+                }
+            },
+            "Wings":{
+                "One":{
+                   "wing_length": 0.99,
+                    "wing_width": 0.97,
+                    "C_lift": 0.0099,
+                    "C_resi": 0.000071
+                }
             }
         }
     }
