@@ -31,26 +31,59 @@
             },
             "Rotors":{
                 "One":{
+                    "act_id": 3,
+                    "pos_x": -0.5,
+                    "pos_y": 0,
+                    "pos_z": 0,
+                    "norm_x": 1.0,
+                    "norm_y": 0,
+                    "norm_z": 0,
                     "max_rpm": 6396.667,
                     "propeller_diameter": 0.2286,
                     "air_density": 1.225,
                     "C_T":  0.109919,
-                    "C_P":  0.040164
+                    "C_P":  0.040164,
+                    "multiR": 0.00148
                 }
             },
             "Rudders":{
                 "One":{
+                    "act_id": 0,
+                    "pos_x": -0.2,
+                    "pos_y": 0.5,
+                    "pos_z": 0,
+                    "norm_x": 0,
+                    "norm_y": 0,
+                    "norm_z": -1.0, 
                     "max_angle_1": 1.45,
-                    "max_thrust_angle_1": 0.095,
-                    "C_res": 0.045
+                    "max_thrust_angle_1": 0.00001,
+                    "C_res": 0
+                },
+                "Two":{
+                    "act_id": 1,
+                    "pos_x": -0.2,
+                    "pos_y": -0.5,
+                    "pos_z": 0,
+                    "norm_x": 0,
+                    "norm_y": 0,
+                    "norm_z": -1.0, 
+                    "max_angle_1": 1.45,
+                    "max_thrust_angle_1": 0.00001,
+                    "C_res": 0
                 }
             },
             "Wings":{
                 "One":{
-                   "wing_length": 0.99,
+                    "pos_x": 0,
+                    "pos_y": 0,
+                    "pos_z": 0,
+                    "norm_x": 0,
+                    "norm_y": 0,
+                    "norm_z": -1.0,
+                    "wing_length": 0.99,
                     "wing_width": 0.97,
-                    "C_lift": 0.0099,
-                    "C_resi": 0.000071
+                    "C_lift": 0.062,
+                    "C_resi": 0.124
                 }
             }
         }
