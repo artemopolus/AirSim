@@ -6,7 +6,7 @@
     "OriginGeopoint": {
     "Latitude": 59.970326, 
     "Longitude": 30.315967,
-    "Altitude": 10
+    "Altitude": 0
   },
   "Vehicles": {
         "PX4": {
@@ -49,26 +49,26 @@
             "Rudders":{
                 "One":{
                     "act_id": 0,
-                    "pos_x": -0.2,
-                    "pos_y": 0.5,
+                    "pos_x": -0.3,
+                    "pos_y": 0,
                     "pos_z": 0,
                     "norm_x": 0,
                     "norm_y": 0,
                     "norm_z": -1.0, 
                     "max_angle_1": 1.45,
-                    "max_thrust_angle_1": 0.00001,
+                    "max_thrust_angle_1": 0.1,
                     "C_res": 0
                 },
                 "Two":{
                     "act_id": 1,
-                    "pos_x": -0.2,
-                    "pos_y": -0.5,
+                    "pos_x": -0.3,
+                    "pos_y": 0,
                     "pos_z": 0,
                     "norm_x": 0,
                     "norm_y": 0,
                     "norm_z": -1.0, 
                     "max_angle_1": 1.45,
-                    "max_thrust_angle_1": 0.00001,
+                    "max_thrust_angle_1": 0.1,
                     "C_res": 0
                 }
             },
