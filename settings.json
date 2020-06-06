@@ -22,6 +22,9 @@
             "ControlPort": 14580,
             "SerialBaudRate": 115200,
             "SerialPort": "*",
+	    "base_mass": 0.1,
+	    "base_length": 0.5,
+	    "base_radius": 0.05,
             "params": {
                 "NAV_RCL_ACT": 0,
                 "NAV_DLL_ACT": 0,
@@ -43,33 +46,36 @@
                     "air_density": 1.225,
                     "C_T":  0.109919,
                     "C_P":  0.040164,
-                    "multiR": 0.00148
+                    "multiR": 0.00148,
+		    "mass": 0.1
                 }
             },
             "Rudders":{
                 "One":{
                     "act_id": 0,
                     "pos_x": -0.3,
-                    "pos_y": 0,
+                    "pos_y": -0.02,
                     "pos_z": 0,
                     "norm_x": 0,
                     "norm_y": 0,
                     "norm_z": -1.0, 
                     "max_angle_1": 1.45,
                     "max_thrust_angle_1": 0.1,
-                    "C_res": 0
+                    "C_res": 0.0,
+		    "mass": 0.1
                 },
                 "Two":{
                     "act_id": 1,
                     "pos_x": -0.3,
-                    "pos_y": 0,
+                    "pos_y": 0.02,
                     "pos_z": 0,
                     "norm_x": 0,
                     "norm_y": 0,
                     "norm_z": -1.0, 
                     "max_angle_1": 1.45,
                     "max_thrust_angle_1": 0.1,
-                    "C_res": 0
+                    "C_res": 0.0,
+		    "mass":0.1
                 }
             },
             "Wings":{
@@ -80,10 +86,18 @@
                     "norm_x": 0,
                     "norm_y": 0,
                     "norm_z": -1.0,
-                    "wing_length": 0.99,
-                    "wing_width": 0.97,
-                    "C_lift": 0.062,
-                    "C_resi": 0.124
+                    "wing_length": 1.5,
+                    "wing_width": 0.25,
+		    "wing_height": 0.02,
+                    "C_lift": 0.07,
+                    "C_resi": 1.5,
+		    "attack_angle_mass": [-15.0, -10.0, 0.0, 15.0, 20.0],
+		    "C_lift_mass": [-0.2, -0.4, 0.1, 1.2, 1.0],
+		    "C_drag_mass": [0.15, 0.05, 0.1, 0.2, 0.4],
+		    "mass": 0.4,
+		    "vx_resist": 5.0,
+		    "vy_resist": 5.0,
+		    "vz_resist": 5.0
                 }
             }
         }
