@@ -6,7 +6,7 @@
     "OriginGeopoint": {
     "Latitude": 59.970326, 
     "Longitude": 30.315967,
-    "Altitude": 0
+    "Altitude": 1
   },
   "Vehicles": {
         "PX4": {
@@ -71,7 +71,7 @@
                     "pos_z": 0,
                     "norm_x": 0,
                     "norm_y": 0,
-                    "norm_z": -1.0, 
+                    "norm_z": 1.0, 
                     "max_angle_1": 1.45,
                     "max_thrust_angle_1": 0.1,
                     "C_res": 0.0,
@@ -95,9 +95,9 @@
 		    "C_lift_mass": [-0.2, -0.4, 0.1, 1.2, 1.0],
 		    "C_drag_mass": [0.15, 0.05, 0.1, 0.2, 0.4],
 		    "mass": 0.4,
-		    "vx_resist": 5.0,
-		    "vy_resist": 5.0,
-		    "vz_resist": 5.0
+		    "vx_resist": 0.1,
+		    "vy_resist": 0.1,
+		    "vz_resist": 0.1
                 }
             }
         }
