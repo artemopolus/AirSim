@@ -54,7 +54,7 @@
                     "norm_z": 1.0, 
                     "max_angle_1": 1.45,
                     "max_thrust_angle_1": 0.1,
-                    "C_res": 0.1,
+                    "C_res": 0.05,
 		    "mass": 0.1
                 },
                 "Two":{
@@ -67,7 +67,7 @@
                     "norm_z": -1.0, 
                     "max_angle_1": 1.45,
                     "max_thrust_angle_1": 0.1,
-                    "C_res": 0.1,
+                    "C_res": 0.05,
 		    "mass":0.1
                 }
             },
